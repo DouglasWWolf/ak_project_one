@@ -1,0 +1,46 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-355,-249",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_CPU_RESETN -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_BTNC -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_LED16_B -pg 1 -lvl 3 -x 620 -y 60 -defaultsOSRD
+preplace portBus SW -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 3 -x 620 -y 80 -defaultsOSRD
+preplace inst source_100mhz -pg 1 -lvl 1 -x 190 -y 60 -swap {0 1 2 4 3} -defaultsOSRD -pinDir CLK100MHZ left -pinY CLK100MHZ 0L -pinDir clk_100mhz right -pinY clk_100mhz 0R -pinDir CPU_RESETN left -pinY CPU_RESETN 20L -pinBusDir interconnect_aresetn right -pinBusY interconnect_aresetn 40R -pinBusDir peripheral_aresetn right -pinBusY peripheral_aresetn 20R
+preplace inst widget -pg 1 -lvl 2 -x 480 -y 60 -defaultsOSRD -pinDir clk left -pinY clk 0L -pinDir resetn left -pinY resetn 20L -pinBusDir switch left -pinBusY switch 90L -pinDir button left -pinY button 110L -pinDir blinker right -pinY blinker 0R -pinBusDir led right -pinBusY led 20R
+preplace netloc CLK100MHZ_1 1 0 1 NJ 60
+preplace netloc CPU_RESETN_1 1 0 1 NJ 80
+preplace netloc button_0_1 1 0 2 NJ 170 NJ
+preplace netloc source_100mhz_clk_100mhz 1 1 1 N 60
+preplace netloc source_100mhz_peripheral_aresetn 1 1 1 N 80
+preplace netloc switch_0_1 1 0 2 NJ 150 NJ
+preplace netloc widget_blinker 1 2 1 N 60
+preplace netloc widget_led 1 2 1 N 80
+levelinfo -pg 1 0 190 480 620
+pagesize -pg 1 -db -bbox -sgen -150 0 740 230
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-260,-189",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_CPU_RESETN -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace inst system_clock -pg 1 -lvl 1 -x 130 -y 100 -defaultsOSRD
+preplace inst system_reset -pg 1 -lvl 2 -x 430 -y 200 -defaultsOSRD
+preplace inst system_interconnect -pg 1 -lvl 3 -x 750 -y 90 -defaultsOSRD
+preplace netloc clk_in1_0_1 1 0 1 NJ 100
+preplace netloc system_clock_clk_100mhz 1 1 2 240 100 NJ
+preplace netloc ext_reset_in_0_1 1 0 2 NJ 180 NJ
+preplace netloc system_reset_interconnect_aresetn 1 2 1 610 120n
+levelinfo -pg 1 0 130 430 750 900
+pagesize -pg 1 -db -bbox -sgen -150 0 900 300
+"
+}
+0
