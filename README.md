@@ -1,5 +1,4 @@
-# Bright Cycle Emulator
+# ak_project_one
 
 ![Design Schematic](/image/design.png)
 
-# ak_project_one
